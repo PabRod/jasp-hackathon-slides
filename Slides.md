@@ -75,16 +75,16 @@ Install --"on"--> Windows & Ubuntu --> Document
 
 --
 
-![](R-screen.png)
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/R-screen.png?raw=true)
 
 --
 
-![](JASP-screen.png)
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-screen.png?raw=true)
 
 --
 ## Impact
 
-![](JASP-world.png)
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-world.png?raw=true)
 
 
 ---
@@ -154,7 +154,8 @@ renv::install()
 
 ## Advanced preferences
 
-![](JASP-dev.png)
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-dev.png?raw=true)
+
 
 ---
 
