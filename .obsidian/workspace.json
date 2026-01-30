@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "4a7b2ad106cfc9f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccae850f5e575ef4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a6a3765d2837d547",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Example.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Example"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8d01fa3abd17e72b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e513783f2a35f7d6",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Slide Preview"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "54c6510146554a18",
+    "type": "split",
+    "children": [
+      {
+        "id": "91627166c3e51176",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d3b3c16169df223",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a187a3908c1f655b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0479a948cb04345c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3d8a3449c0a3d7a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "87b05e8e3fe2502e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa103c185abeaae7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "bd511129f884f57c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "6d98fb7760f8e0a3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cda5c139fc536486",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
+    }
+  },
+  "active": "4d3b3c16169df223",
+  "lastOpenFiles": [
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff",
+    "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff",
+    "docs/plugin/chalkboard/img/whiteboard.png",
+    "docs/plugin/chalkboard/img/sponge.png",
+    "docs/plugin/chalkboard/img/chalk-yellow.png",
+    "docs/plugin/chalkboard/img/chalk-white.png",
+    "docs/plugin/chalkboard/img/chalk-red.png",
+    "docs/plugin/chalkboard/img/chalk-purple.png",
+    "docs/plugin/chalkboard/img/chalk-orange.png",
+    "docs/plugin/chalkboard/img/chalk-green.png",
+    "docs/plugin/chalkboard/img/chalk-blue.png",
+    "docs/plugin/chalkboard/img/boardmarker-yellow.png",
+    "docs/plugin/menu/README.md",
+    "docs/plugin/menu/CONTRIBUTING.md",
+    "docs/plugin/customcontrols/README.md",
+    "docs/plugin/chalkboard/README.md",
+    "docs/plugin/chart/README.md",
+    "docs/Example/plugin/chalkboard/README.md",
+    "docs/Example/plugin/chart/README.md",
+    "docs/Example/plugin/customcontrols/README.md",
+    "docs/Example/plugin/menu/CONTRIBUTING.md",
+    "docs/Example/plugin/menu/README.md",
+    "README.md",
+    "Example.md",
+    "export/Example/plugin/chalkboard/README.md",
+    "export/Example/plugin/chart/README.md",
+    "export/Example/plugin/customcontrols/README.md",
+    "export/Example/plugin/menu/CONTRIBUTING.md",
+    "export/Example/plugin/menu/README.md",
+    "Welcome.md",
+    "Hi.md"
+  ]
+}
