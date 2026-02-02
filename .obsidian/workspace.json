@@ -24,11 +24,11 @@
         ]
       },
       {
-        "id": "f64fb3fee2a59f67",
+        "id": "b5be54e51350c57d",
         "type": "tabs",
         "children": [
           {
-            "id": "a9677a6aa3d1c5be",
+            "id": "d2e89dc0be2fa495",
             "type": "leaf",
             "state": {
               "type": "reveal-preview-view",
@@ -181,7 +181,7 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "4d3b3c16169df223",
+  "active": "d2e89dc0be2fa495",
   "lastOpenFiles": [
     "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff",
     "docs/plugin/math/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff",
