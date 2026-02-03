@@ -1,8 +1,7 @@
 ---
 theme: serif
-bg: https://github.com/PabRod/autodiff-slides/blob/main/_meta/_img/escience.png?raw=true
+bg: https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true
 ---
-
 <!-- slide bg="https://github.com/PabRod/autodiff-slides/blob/main/_meta/_img/escience-cover.png?raw=true" -->
 # JASP modules hackathon
 
@@ -65,7 +64,7 @@ Install --"on"--> Windows & Ubuntu --> Document
 ---
 ## Before we start
 + Feel at home ☕
-+ Get your slides at [pabrod.github.io](https://pabrod.github.io)
++ Get your copy of these slides at [pabrod.github.io](https://pabrod.github.io)
 
 ---
 ## Why JASP modules?
@@ -85,73 +84,51 @@ Install --"on"--> Windows & Ubuntu --> Document
 
 
 ---
-
 # Setup
 ## In a nutshell
 Your system has to be able to:
 - Install JASP  
-- Install R packages from source
+- Install R packages
+	- From source
+	- From CRAN
+	- From GitHub
 
 --
 
-##  Basics
-- We all are going to need:
-	- R
-	- JASP (nightly version) TODO 
-	- RStudio (recommended)
+## Check ✅
+1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
+2. Open it with RStudio
+3. Go to the `Build` tab, and press `Install`
+4. Didn't work? Take a look at the error message(s)
 
 --
-
-## Dependencies
-### System
-`cmake` and `gcc-fortran`
-
-
---
-
-## Dependencies
-
-### CRAN packages
-```r
-renv::install(c(
-	"renv", 
-	"remotes"))
-```
+### Frequent problems
+- [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
+- [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
+- Other system dependencies are:
+	- `cmake`
+	- `gcc-fortran`
 
 --
+### Frequent problems
+❌ jaspTools, jaspGraphs and jaspBase are hosted on GitHub, not on CRAN 
 
-## Dependencies
-
-### GitHub packages
-Some of the required packages are not available in CRAN. You can install them via GitHub. 
+👇
+Use `remotes`:
 
 ```r
 remotes::install_github(c(
 	"jasp-stats/jaspBase", 
 	"jasp-stats/jaspGraphs", 
 	"jasp-stats/jaspTools"))
-```
-
-Often, this requires you to set up a _GitHub Personal Access Token_.
+``` 
 
 --
 
-## Other
-- A GitHub account
-- A GitHub Personal Access Token
+### Frequent problems
+❌ GitHub authentication credentials (`GITHUB_PAT` / Personal Access Token) are not available.
 
-```r
-renv::install()
-- GitHub authentication credentials are not available.
-- Please set GITHUB_PAT, or ensure the 'gitcreds' package is installed.
-- See https://usethis.r-lib.org/articles/git-credentials.html for more details.
-```
-
---
-
-## Advanced preferences
-
-![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-dev.png?raw=true)
+👉 Create a GITHUB_PAT in your GitHub.com account, and set it as an envrironment variable in R.
 
 
 ---
@@ -324,4 +301,8 @@ You don't have to remind any of this. That's why we have a template!
 	- [R Analyses guide](/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
 
 ---
-# Thanks for your attention
+### We are here to help
+
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/qr.png)
+Materials available at 
+[pabrod.github.io](https://pabrod.github.io)
