@@ -130,10 +130,26 @@ remotes::install_github(c(
 
 👉 Create a GITHUB_PAT in your GitHub.com account, and set it as an envrironment variable in R.
 
+--
+### For Ubuntu users
+We pre-packed all the required dependencies in a flatpak package. You can install and open it like this:
+
+```sh
+flatpak run --branch=beta --devel org.jaspstats.JASP
+```
+
+--
+### For Ubuntu users
+
+The workflow is:
+
+1. Edit your module in R studio
+2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
+3. `install.packages(<path to module>)` to install it from source
 
 ---
 
-## What is as JASP module?
+## What is a JASP module?
 
 A JASP module is an extension that adds new functionality to JASP
 
@@ -287,6 +303,12 @@ You don't have to remind any of this. That's why we have a template!
 - Try to keep the functionality your JASP module adds on top of the underlying R package to a minimum
 - Work mostly on the GUI, not on the backend functionality
 
+--
+
+### Tips and tricks
+#### Where is my module?
+If you forgot where your module was stored, just open R and type `.libPaths()`.
+
 ---
 ## Reference materials
 
@@ -303,6 +325,6 @@ You don't have to remind any of this. That's why we have a template!
 ---
 ### We are here to help
 
-![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/qr.png?raw=true)
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/qr.png?raw=true) 
 Materials available at 
 [pabrod.github.io](https://pabrod.github.io)
