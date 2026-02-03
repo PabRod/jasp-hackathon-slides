@@ -303,6 +303,6 @@ You don't have to remind any of this. That's why we have a template!
 ---
 ### We are here to help
 
-![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/qr.png)
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/qr.png?raw=true)
 Materials available at 
 [pabrod.github.io](https://pabrod.github.io)
