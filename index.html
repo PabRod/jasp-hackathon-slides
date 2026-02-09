@@ -89,8 +89,6 @@
 
 # JASP modules hackathon
 
-## Build your own module
-
 By Pablo Rodríguez-Sánchez
 </div>
 
@@ -145,13 +143,21 @@ end</p>
 graph TD
 Install --"on"--> Windows & Ubuntu --> Document
 
-</div></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Before we start
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Feel at home ☕
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Get your copy of these slides at [pabrod.github.io](https://pabrod.github.io)
-</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Get your copy of these slides at [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+[<img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/who.png?raw=true">](https://jasp-stats.org/team/)
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Tell us about you
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Why JASP modules?
@@ -169,75 +175,13 @@ Install --"on"--> Windows & Ubuntu --> Document
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-world.png?raw=true" alt="" style="object-fit: scale-down">
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-# Setup
-## In a nutshell
-Your system has to be able to:
-- Install JASP  
-- Install R packages
-	- From source
-	- From CRAN
-	- From GitHub
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-## Check ✅
-1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
-2. Open it with RStudio
-3. Go to the `Build` tab, and press `Install`
-4. Didn't work? Take a look at the error message(s)
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Frequent problems
-- [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
-- [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
-- Other system dependencies are:
-	- `cmake`
-	- `gcc-fortran`
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Frequent problems
-❌ jaspTools, jaspGraphs and jaspBase are hosted on GitHub, not on CRAN 
-
-👇
-Use `remotes`:
-
-```r
-remotes::install_github(c(
-	"jasp-stats/jaspBase", 
-	"jasp-stats/jaspGraphs", 
-	"jasp-stats/jaspTools"))
-```
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Frequent problems
-❌ GitHub authentication credentials (`GITHUB_PAT` / Personal Access Token) are not available.
-
-👉 Create a GITHUB_PAT in your GitHub.com account, and set it as an envrironment variable in R.
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### For Ubuntu users
-We pre-packed all the required dependencies in a flatpak package. You can install and open it like this:
-
-```sh
-flatpak run --branch=beta --devel org.jaspstats.JASP
-```
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### For Ubuntu users
-
-The workflow is:
-
-1. Edit your module in R studio
-2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
-3. `install.packages(<path to module>)` to install it from source
+## Goals of this hackathon
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->✔️ Help you with the first steps developing a JASP module
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->❓  Plant the seeds of a future collaboration
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->❌ Have a finished JASP module
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -267,7 +211,98 @@ By pressing the `+` icon at the right-hand side of the screen, many more modules
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+## Setup in a nutshell
+
+Your system has to be able to:
+- Install JASP  
+- Install R packages
+	- From source
+	- From CRAN
+	- From GitHub
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Check ✅
+1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
+2. Open it with RStudio
+3. Go to the `Build` tab, and press `Install`
+4. Didn't work? Take a look at the error message(s)
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Frequent problems
+- [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
+- [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
+- Other system dependencies are:
+	- `cmake`
+	- `gcc-fortran`
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Frequent problems
+`jaspTools`, `jaspGraphs` and `jaspBase` are hosted on GitHub, not on CRAN 
+
+👇
+Use `remotes`:
+
+```r
+remotes::install_github(c(
+	"jasp-stats/jaspBase", 
+	"jasp-stats/jaspGraphs", 
+	"jasp-stats/jaspTools"))
+```
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Frequent problems
+I'm asked a `GITHUB_PAT`. 
+
+👇
+- Generate a new token in your GitHub.com account (`Your profile/Settings/Developer settings/Personal access tokens/Tokens (classic)`)
+	- No need to tick any scope
+	- No need for expiration date
+- Set it as an environment variable in R
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+This happens because installing some of the jasp packages requires multiple calls to GitHub, which GitHub finds suspicious. So you need to identify yourself with a Personal Access Token.
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### For Linux users
+We pre-packed all the required dependencies in a flatpak package. Use the command below to install and run it:
+
+```sh
+flatpak run --branch=beta --devel org.jaspstats.JASP
+```
+
+Of course, if you prefer, you can install your dependencies yourself.
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### For Linux users
+
+The workflow is:
+
+1. Edit your module in R studio
+2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
+3. `install.packages(<path to module>)` to install it from source
+4. Refresh in JASP from the ribbon menu
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
 # How to write a module?
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## TL;DR
+
+0. Install JASP and R
+1. Download our module template
+2. Install it using R
+3. Load it in JASP as a developer module
+4. Adapt it to your needs
+5. Rinse and repeat
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -329,6 +364,32 @@ In detail
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+## `qml` example
+
+<img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/detail-menu.png?raw=true" alt="" style="object-fit: scale-down">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+```qml
+Form {
+  Text {
+      text: qsTr("This analysis shows you different interface elements of JASP")
+  }
+	Group {
+		title: qsTr("Logical controls")
+		CheckBox {
+			name: "my_tick_mark"
+			label: qsTr("Tick mark")
+			checked: false // Default value
+		 }
+		RadioButtonGroup {
+			name: "radio_buttons"
+			...
+	}
+```
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
 #### Helicopter view
 
 <div class="mermaid">
@@ -371,7 +432,7 @@ qml --that defines interactive objects--> name[name: obj_name] --that are passed
 
 # Good news
 
-You don't have to remind any of this. That's why we have a template!
+You don't have to remember any of this. That's why we have a template!
 
 [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
@@ -387,6 +448,14 @@ You don't have to remind any of this. That's why we have a template!
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Tips and tricks
+- Think of scalability
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Do not reinvent the wheel
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Rely on the underlying R package as much as possible
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Work mostly on the GUI, not on the functionality
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Tips and tricks
 - Don't forget that each element lives in three files:
 
 	- `inst/description.qml`
@@ -396,20 +465,14 @@ You don't have to remind any of this. That's why we have a template!
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Tips and tricks
-- Try to keep the functionality your JASP module adds on top of the underlying R package to a minimum
-- Work mostly on the GUI, not on the backend functionality
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Tips and tricks
 #### Where is my module?
 If you forgot where your module was stored, just open R and type `.libPaths()`.
 </div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-## Reference materials
+#### Reference materials
 
-- These slides: [pabrod.github.io](https://pabrod.github.io)
+- These slides: [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
 - [Curated background materials](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-background-materials.md)
 - [Tutorial: Development of a JASP module](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-modules-tutorial.md)
 - [jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
@@ -418,16 +481,26 @@ If you forgot where your module was stored, just open R and type `.libPaths()`.
 	- [Detailed JASP module structure](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-module-structure.md)
 	- [JASP QML guide](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-qml-guide.md)
 	- [R Analyses guide](/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### First goal of the day
+
+
+0. Install JASP and R
+1. Download our module template
+2. Install it using R
+3. Load it in JASP as a developer module
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### We are here to help
 
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/qr.png?raw=true" alt="" style="object-fit: scale-down">
 
-Materials available at 
-[pabrod.github.io](https://pabrod.github.io)
-</div></script></section></div>
+
+[pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides)
+</div></script></section></section></div>
     </div>
 
     <script src="dist/reveal.js"></script>
