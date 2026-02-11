@@ -5,7 +5,7 @@ bg: https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?
 <!-- slide bg="https://github.com/PabRod/autodiff-slides/blob/main/_meta/_img/escience-cover.png?raw=true" -->
 # JASP modules hackathon
 
-By Pablo Rodríguez-Sánchez
+By Dr. Pablo Rodríguez-Sánchez
 
 note: this will be invisible in the slide
 ### Mind map
@@ -99,7 +99,6 @@ code: 8930 8688
 + ✔️ Help you with the first steps developing a JASP module
 + ❓  Plant the seeds of a future collaboration
 + ❌ Have a finished JASP module
-
 ---
 ## What is a JASP module?
 
@@ -132,81 +131,6 @@ By pressing the `+` icon at the right-hand side of the screen, many more modules
 
 ![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/store.png?raw=true)
 
----
-
-## Setup in a nutshell
-
-Your system has to be able to:
-- Install JASP  
-- Install R packages
-	- From source
-	- From CRAN
-	- From GitHub
-
---
-
-## Check ✅
-1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
-2. Open it with RStudio
-3. Go to the `Build` tab, and press `Install`
-4. Didn't work? Take a look at the error message(s)
-
---
-### Frequent problems
-- [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
-- [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
-- Other system dependencies are:
-	- `cmake`
-	- `gcc-fortran`
-
---
-### Frequent problems
-`jaspTools`, `jaspGraphs` and `jaspBase` are hosted on GitHub, not on CRAN 
-
-👇
-Use `remotes`:
-
-```r
-remotes::install_github(c(
-	"jasp-stats/jaspBase", 
-	"jasp-stats/jaspGraphs", 
-	"jasp-stats/jaspTools"))
-``` 
-
---
-
-### Frequent problems
-I'm asked a `GITHUB_PAT`. 
-
-👇
-- Generate a new token in your GitHub.com account (`Your profile/Settings/Developer settings/Personal access tokens/Tokens (classic)`)
-	- No need to tick any scope
-	- No need for expiration date
-- Set it as an environment variable in R
-
---
-
-This happens because installing some of the jasp packages requires multiple calls to GitHub, which GitHub finds suspicious. So you need to identify yourself with a Personal Access Token.
-
---
-### For Linux users
-We pre-packed all the required dependencies in a flatpak package. Use the command below to install and run it:
-
-```sh
-flatpak run --branch=beta --devel org.jaspstats.JASP
-```
-
-Of course, if you prefer, you can install your dependencies yourself.
-
---
-### For Linux users
-
-The workflow is:
-
-1. Edit your module in R studio
-2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
-3. `install.packages(<path to module>)` to install it from source
-4. Refresh in JASP from the ribbon menu
 
 ---
 
@@ -381,6 +305,92 @@ You don't have to remember any of this. That's why we have a template!
 #### Where is my module?
 If you forgot where your module was stored, just open R and type `.libPaths()`.
 
+---
+
+## Setup in a nutshell
+
+Your system has to be able to:
+- Install JASP  
+- Install R packages
+	- From source
+	- From CRAN
+	- From GitHub
+
+--
+
+## Check ✅
+1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
+2. Open it with RStudio
+3. Go to the `Build` tab, and press `Install`
+4. Didn't work? Take a look at the error message(s)
+
+--
+### Frequent problems
+- [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
+- [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
+- Other system dependencies are:
+	- `cmake`
+	- `gcc-fortran`
+
+--
+### Frequent problems
+`jaspTools`, `jaspGraphs` and `jaspBase` are hosted on GitHub, not on CRAN 
+
+👇
+Use `remotes`:
+
+```r
+remotes::install_github(c(
+	"jasp-stats/jaspBase", 
+	"jasp-stats/jaspGraphs", 
+	"jasp-stats/jaspTools"))
+``` 
+
+--
+
+### Frequent problems
+I'm asked a `GITHUB_PAT`. 
+
+👇
+- Generate a new token in your GitHub.com account (`Your profile/Settings/Developer settings/Personal access tokens/Tokens (classic)`)
+	- No need to tick any scope
+	- No need for expiration date
+- Set it as an environment variable in R
+
+--
+
+This happens because installing some of the jasp packages requires multiple calls to GitHub, which GitHub finds suspicious. So you need to identify yourself with a Personal Access Token.
+
+--
+### For Linux users
+We pre-packed all the required dependencies in a flatpak package. Use the command below to install and run it:
+
+```sh
+flatpak run --branch=beta --devel org.jaspstats.JASP
+```
+
+Of course, if you prefer, you can install your dependencies yourself.
+
+--
+### For Linux users
+
+The workflow is:
+
+1. Edit your module in R studio
+2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
+3. `install.packages(<path to module>)` to install it from source
+4. Refresh in JASP from the ribbon menu
+
+--
+
+### First goal of the day
+
+0. Install JASP and R
+1. Download our module template
+2. Install it using R
+3. Load it in JASP as a developer module
+   
+[github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
 
 ---
 #### Reference materials
@@ -395,18 +405,6 @@ If you forgot where your module was stored, just open R and type `.libPaths()`.
 - [Detailed JASP module structure](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-module-structure.md)
 - [JASP QML guide](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-qml-guide.md)
 - [R Analyses guide](/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
-
----
-### First goal of the day
-
-
-0. Install JASP and R
-1. Download our module template
-2. Install it using R
-3. Load it in JASP as a developer module
-   
-[github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
-
 
 
 --
