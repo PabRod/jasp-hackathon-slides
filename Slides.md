@@ -73,6 +73,11 @@ Install --"on"--> Windows & Ubuntu --> Document
 
 ## Tell us about you
 
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/menti.png?raw=true)
+[mentimeter.com](https://www.menti.com/alydqfpc8hh7)
+
+code: 8930 8688
+
 ---
 ## Why JASP modules?
 + It's all about user experience
@@ -122,6 +127,10 @@ By pressing the `+` icon at the right-hand side of the screen, many more modules
 
 ![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-dev.png?raw=true)
 
+--
+### Coming soon!
+
+![](https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/store.png?raw=true)
 
 ---
 
@@ -346,14 +355,15 @@ You don't have to remember any of this. That's why we have a template!
 ## How to use the template
 
 1. Just download or clone it
-2. Adapt it to your needs. For instance:
+2. Add your desired R package(s) to `DESCRIPTION`
+3. Adapt the template to your needs. For instance:
 	1. Duplicate the elements you need more than once
 	2. Remove the elements you don't need
 
 --
 
 ### Tips and tricks
-- Think of scalability
++ Think of scalability
 + Do not reinvent the wheel
 + Rely on the underlying R package as much as possible
 + Work mostly on the GUI, not on the functionality
@@ -378,12 +388,13 @@ If you forgot where your module was stored, just open R and type `.libPaths()`.
 - These slides: [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
 - [Curated background materials](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-background-materials.md)
 - [Tutorial: Development of a JASP module](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-modules-tutorial.md)
-- [jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
-  
-- Advanced materials
-	- [Detailed JASP module structure](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-module-structure.md)
-	- [JASP QML guide](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-qml-guide.md)
-	- [R Analyses guide](/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
+- [Minimalistic git slides](https://nlesc-my.sharepoint.com/:p:/g/personal/p_rodriguez-sanchez_esciencecenter_nl/IQBmUMSGPb9JSKGnQxJlPopLAUAoEkZKLKImJAq3demD8D0?e=aVK5N1)
+
+...
+
+- [Detailed JASP module structure](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-module-structure.md)
+- [JASP QML guide](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-qml-guide.md)
+- [R Analyses guide](/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
 
 ---
 ### First goal of the day
@@ -393,6 +404,10 @@ If you forgot where your module was stored, just open R and type `.libPaths()`.
 1. Download our module template
 2. Install it using R
 3. Load it in JASP as a developer module
+   
+[github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
+
+
 
 --
 ### We are here to help
