@@ -287,14 +287,6 @@ You don't have to remember any of this. That's why we have a template!
 
 --
 
-### Tips and tricks
-+ Think of scalability
-+ Do not reinvent the wheel
-+ Rely on the underlying R package as much as possible
-+ Work mostly on the GUI, not on the functionality
-
----
-
 ## Setup in a nutshell
 
 Your system has to be able to:
@@ -362,8 +354,9 @@ The workflow is:
 
 ---
 
-### First goal of the day
+### Goal 1
 
+#### Setup the developer mode
 0. Install JASP and R
 1. Download our module template
 2. Install it using R
@@ -393,8 +386,20 @@ Suggests:
 install.packages(".", dependencies = TRUE)
 ```
 
+--
+
+## Goal 3
+### Create your custom module
+
+--
+### Tips and tricks
++ Picture your GUI. Use pen and paper if needed
++ Do not reinvent the wheel
++ Rely on the underlying R package as much as possible
++ Work mostly on the GUI, not on the functionality
 
 ---
+
 #### Reference materials
 
 - These slides: [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
@@ -457,11 +462,12 @@ This happens because installing some of the jasp packages requires multiple call
 
 --
 ### Frequent problems
-- Don't forget that each element lives in three files:
+- Don't forget that each element might live in up to these 4 files:
 
 	- `inst/description.qml`
 	- `inst/qml/<filename>.qml`
 	- `R/<filename>.R`
+	- `NAMESPACE`
 
 --
 
