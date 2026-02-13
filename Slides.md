@@ -318,6 +318,61 @@ Your system has to be able to:
 
 --
 
+## For Windows users
+1. Install JASP using Microsoft Store.
+2. Install git, R and Rtools using winget:
+```
+winget install Posit.RStudio
+winget install RProject.Rtools
+winget install git.git
+```
+3. Clone the template
+```
+git clone https://github.com/jasp-stats/jaspModuleTemplate.git
+cd jaspModuleTemplate
+```
+
+--
+
+4. Open RStudio and open the project in the cloned folder.
+5. Install following packages:
+```r
+install.packages(c("usethis", "renv", "devtools", "pak"))
+```
+6. Restart Rstudio
+```
+# Configure GH token with
+gitcreds::gitcreds_set()
+# prep env with renv
+renv::init()
+```
+7. In Rstudio terminal run:
+```
+R CMD INSTALL . --preclean --no-multiarch --with-keep.source jaspModuleTemplate
+```
+
+--
+### For Linux users
+We pre-packed all the required dependencies in a flatpak package. Use the command below to install and run it:
+
+```sh
+flatpak run --branch=beta --devel org.jaspstats.JASP
+```
+
+Of course, if you prefer, you can install your dependencies yourself.
+
+--
+### For Linux users
+
+The workflow is:
+
+1. Edit your module in R studio
+2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
+3. `install.packages(<path to module>)` to install it from source
+4. Refresh in JASP from the ribbon menu
+
+--
+
 ## Check ✅
 1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
 2. Open it with RStudio
@@ -360,26 +415,6 @@ I'm asked a `GITHUB_PAT`.
 --
 
 This happens because installing some of the jasp packages requires multiple calls to GitHub, which GitHub finds suspicious. So you need to identify yourself with a Personal Access Token.
-
---
-### For Linux users
-We pre-packed all the required dependencies in a flatpak package. Use the command below to install and run it:
-
-```sh
-flatpak run --branch=beta --devel org.jaspstats.JASP
-```
-
-Of course, if you prefer, you can install your dependencies yourself.
-
---
-### For Linux users
-
-The workflow is:
-
-1. Edit your module in R studio
-2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
-3. `install.packages(<path to module>)` to install it from source
-4. Refresh in JASP from the ribbon menu
 
 --
 
