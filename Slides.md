@@ -293,19 +293,6 @@ You don't have to remember any of this. That's why we have a template!
 + Rely on the underlying R package as much as possible
 + Work mostly on the GUI, not on the functionality
 
---
-### Tips and tricks
-- Don't forget that each element lives in three files:
-
-	- `inst/description.qml`
-	- `inst/qml/<filename>.qml`
-	- `R/<filename>.R`
-
---
-### Tips and tricks
-#### Where is my module?
-If you forgot where your module was stored, just open R and type `.libPaths()`.
-
 ---
 
 ## Setup in a nutshell
@@ -372,52 +359,8 @@ The workflow is:
 3. `install.packages(<path to module>)` to install it from source
 4. Refresh in JASP from the ribbon menu
 
---
 
-## Check ✅
-1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
-2. Open it with RStudio
-3. Go to the `Build` tab, and press `Install`
-4. Didn't work? Take a look at the error message(s)
-
---
-### Frequent problems
-- [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
-- [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
-- Other system dependencies are:
-	- `cmake`
-	- `gcc-fortran`
-
---
-### Frequent problems
-`jaspTools`, `jaspGraphs` and `jaspBase` are hosted on GitHub, not on CRAN 
-
-👇
-Use `remotes`:
-
-```r
-remotes::install_github(c(
-	"jasp-stats/jaspBase", 
-	"jasp-stats/jaspGraphs", 
-	"jasp-stats/jaspTools"))
-``` 
-
---
-
-### Frequent problems
-I'm asked a `GITHUB_PAT`. 
-
-👇
-- Generate a new token in your GitHub.com account (`Your profile/Settings/Developer settings/Personal access tokens/Tokens (classic)`)
-	- No need to tick any scope
-	- No need for expiration date
-- Set it as an environment variable in R
-
---
-
-This happens because installing some of the jasp packages requires multiple calls to GitHub, which GitHub finds suspicious. So you need to identify yourself with a Personal Access Token.
-
---
+---
 
 ### First goal of the day
 
@@ -473,3 +416,67 @@ install.packages(".", dependencies = TRUE)
 
 [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides)
 
+---
+
+### Frequent problems
+
+- [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
+- [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
+- Other system dependencies are:
+	- `cmake`
+	- `gcc-fortran`
+
+--
+### Frequent problems
+`jaspTools`, `jaspGraphs` and `jaspBase` are hosted on GitHub, not on CRAN 
+
+👇
+Use `remotes`:
+
+```r
+remotes::install_github(c(
+	"jasp-stats/jaspBase", 
+	"jasp-stats/jaspGraphs", 
+	"jasp-stats/jaspTools"))
+``` 
+
+--
+
+### Frequent problems
+I'm asked a `GITHUB_PAT`. 
+
+👇
+- Generate a new token in your GitHub.com account (`Your profile/Settings/Developer settings/Personal access tokens/Tokens (classic)`)
+	- No need to tick any scope
+	- No need for expiration date
+- Set it as an environment variable in R
+
+--
+
+This happens because installing some of the jasp packages requires multiple calls to GitHub, which GitHub finds suspicious. So you need to identify yourself with a Personal Access Token.
+
+--
+### Frequent problems
+- Don't forget that each element lives in three files:
+
+	- `inst/description.qml`
+	- `inst/qml/<filename>.qml`
+	- `R/<filename>.R`
+
+--
+
+### Frequent problems
+#### My functions are not exported
+Check your `NAMESPACE` file. It should look like:
+
+```r
+import(jaspBase)
+export(<one function>)
+export(<another function>)
+...
+```
+
+--
+### Frequent problems
+#### Where is my module?
+If you forgot where your module was stored, just open R and type `.libPaths()`.
