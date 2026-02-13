@@ -285,9 +285,9 @@ You don't have to remember any of this. That's why we have a template!
 	1. Duplicate the elements you need more than once
 	2. Remove the elements you don't need
 
---
+---
 
-## Setup in a nutshell
+# Setup
 
 Your system has to be able to:
 - Install JASP  
@@ -462,7 +462,7 @@ This happens because installing some of the jasp packages requires multiple call
 
 --
 ### Frequent problems
-- Don't forget that each element might live in up to these 4 files:
+Don't forget that each element might live in up to these 4 files:
 
 	- `inst/description.qml`
 	- `inst/qml/<filename>.qml`
