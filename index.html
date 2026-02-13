@@ -84,438 +84,1579 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/autodiff-slides/blob/main/_meta/_img/escience-cover.png?raw=true" -->
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-# JASP modules hackathon
+<!-- .slide: data-background-image="https://github.com/PabRod/autodiff-slides/blob/main/_meta/_img/escience-cover.png?raw=true" -->
+<!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div># JASP modules hackathon
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 By Dr. Pablo Rodríguez-Sánchez
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div>
 
 <aside class="notes"><p>this will be invisible in the slide</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <h3 id="mind-map">Mind map</h3>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
 <div class="mermaid">
-timeline
-    title Structure
-    Logistics    : Welcome
-                 : Coffee
-    Intro        : User experience
-                 : R packages
-                 : QML interfaces
-    Setup        : R
-                 : Dependencies
-                 : Dev mode
-                 : Personal access token
-    The basics   : The template
-                 : JASPBase
-                 : GUI elements
-    Advanced     : Plan for mistakes
-                 : Version control
-                 : Input control
-                 : Error handling
-                 : Submitting
-    Hands-on
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>timeline</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>title Structure
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>Logistics    : Welcome
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Coffee
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>Intro        : User experience
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : R packages
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : QML interfaces
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>Setup        : R
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Dependencies
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Dev mode
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Personal access token
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>The basics   : The template
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : JASPBase
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : GUI elements
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>Advanced     : Plan for mistakes
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Version control
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Input control
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Error handling
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>             : Submitting
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>Hands-on
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 
 </div>
 
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <h3 id="attendants-experience">Attendant&#39;s experience</h3>
-<div class="mermaid">
-graph TD
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 
-<p>subgraph Intro
-    User[&quot;User experience&quot;] --&gt; JASPapproach[&quot;JASP&#39;s approach&quot;]
-end</p>
-<p>subgraph Setup
-    InstallR[&quot;Install R&quot;] &amp; InstallJASP[&quot;Install JASP&quot;] --&gt; Dependencies --&gt; Tricks --&gt; GITHUB_PAT &amp; DevMode &amp; Renv
-end</p>
-<p>subgraph Basics[&quot;The basics&quot;]
-    Inside[&quot;Inside JASP&quot;] --&gt; JASPBase --&gt; GUI[&quot;GUI elements&quot;] --&gt; Template
-end</p>
-<p>subgraph Advanced[&quot;Advanced&quot;]
-    Plan[&quot;Plan for mistakes&quot;] --&gt; Input[&quot;Input control&quot;] --&gt; Error[&quot;Error handling&quot;] --&gt; Submitting
-end</p>
+<div class="mermaid">
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>graph TD</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>subgraph Intro</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>User[&quot;User experience&quot;] --&gt; JASPapproach[&quot;JASP&#39;s approach&quot;]
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>end</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>subgraph Setup</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>InstallR[&quot;Install R&quot;] &amp; InstallJASP[&quot;Install JASP&quot;] --&gt; Dependencies --&gt; Tricks --&gt; GITHUB_PAT &amp; DevMode &amp; Renv
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>end</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>subgraph Basics[&quot;The basics&quot;]</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>Inside[&quot;Inside JASP&quot;] --&gt; JASPBase --&gt; GUI[&quot;GUI elements&quot;] --&gt; Template
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>end</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>subgraph Advanced[&quot;Advanced&quot;]</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<pre><code>Plan[&quot;Plan for mistakes&quot;] --&gt; Input[&quot;Input control&quot;] --&gt; Error[&quot;Error handling&quot;] --&gt; Submitting
+</code></pre>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>end</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <p>Welcome --&gt; Intro --&gt; Setup --&gt; Basics --&gt; Advanced</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
 </div>
 
-<h2 id="todos">TODOs</h2>
-<div class="mermaid">
-graph TD
-Install --"on"--> Windows & Ubuntu --> Document
 
-</div></aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<h2 id="todos">TODOs</h2>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<div class="mermaid">
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>graph TD</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<p>Install --&quot;on&quot;--&gt; Windows &amp; Ubuntu --&gt; Document</p>
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+</div>
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" --></aside></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Before we start
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Feel at home ☕
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Get your copy of these slides at [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 [<img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/who.png?raw=true">](https://jasp-stats.org/team/)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ## Tell us about you
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/menti.png?raw=true" alt="" style="object-fit: scale-down">
 
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 [mentimeter.com](https://www.menti.com/alydqfpc8hh7)
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 code: 8930 8688
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Why JASP modules?
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->It's all about user experience
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Coding vs. click and drag
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/R-screen.png?raw=true" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-screen.png?raw=true" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-world.png?raw=true" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Goals of this hackathon
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->✔️ Help you with the first steps developing a JASP module
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->❓  Plant the seeds of a future collaboration
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="3" -->❌ Have a finished JASP module
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## What is a JASP module?
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 A JASP module is an extension that adds new functionality to JASP
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 Many of the modules are directly accessible in the upper ribbon of JASP:
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
   
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/jasp-stats/jasp-desktop/raw/development/Docs/development/img/core-mods.png" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 By pressing the `+` icon at the right-hand side of the screen, many more modules can be added to the ribbon.
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/jasp-stats/jasp-desktop/raw/development/Docs/development/img/extra-mods.png" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/JASP-dev.png?raw=true" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Coming soon!
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/store.png?raw=true" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 # How to write a module?
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ## TL;DR
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 0. Install JASP and R
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 1. Download our module template
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 2. Install it using R
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 3. Load it in JASP as a developer module
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 4. Adapt it to your needs
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 5. Rinse and repeat
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://jasp-stats.org/wp-content/uploads/2025/11/JASPModulePuzzle.jpg" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ## Folder structure
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ```sh
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 .
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 └── < An R package >
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     └──inst
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
         ├── Description.qml    # Builds the ribbon menu
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
         ├── qml                # Folder containing one or more...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
         │   └── analysis_1.qml # ... module's menus
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
         └── < optional stuff >
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 In detail
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ```sh
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 .
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── <module_name>.Rproj
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── DESCRIPTION             # Describes the package and lists its dependencies
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── LICENSE
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── NAMESPACE               # Controls function importing
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── R                       # Where the package functions live
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 │   └── functions.R
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 │   └── more-functions.R
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 │   └── ...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── README.md
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── renv.lock               # (Optional) Environment management...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── _processedLockFile.lock # ...files, controlled by package renv
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ├── tests/                  # (Optional) Unit tests
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 │
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 │  # === So far, this is just a standard R package ===
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 │  # === Interaction with JASP starts below === 
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 │ 
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 └──inst
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     ├── Description.qml     # Builds the ribbon menu
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     ├── Upgrades.qml        # Optional
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     ├── qml                 # Folder containing one or more...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     │   └── analysis_1.qml  # ... module's menus
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     │   └── ...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     ├── help                # (Optional) Module's help files
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     │   └── ...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
     └── icons               # (Optional) Module's icons
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
         ├── <module_name>.svg
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
         └── ...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/jasp-stats/jaspModuleTemplate/raw/develop/inst/img/JASP.png?raw=true" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ## `qml` example
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/detail-menu.png?raw=true" alt="" style="object-fit: scale-down">
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ```qml
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 Form {
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
   Text {
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
       text: qsTr("This analysis shows you different interface elements of JASP")
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
   }
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	Group {
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 		title: qsTr("Logical controls")
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 		CheckBox {
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 			name: "my_tick_mark"
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 			label: qsTr("Tick mark")
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 			checked: false // Default value
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 		 }
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 		RadioButtonGroup {
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 			name: "radio_buttons"
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 			...
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	}
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 #### Helicopter view
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
 <div class="mermaid">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 graph TD
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 R["R functions"] -- imported via --> NAMESPACE -- called by --> qmls["qml files"] -- to create--> Analyses
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 Analyses & help & icons & aesthetics["other aesthetics"] -- coordinated by --> Description.qml -- to create --> Menu["Graphical menu"]
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 
 </div>
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 #### Information flow
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 
 <div class="mermaid">
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 graph TD
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 description.qml --"contains one or more"--> Analyses --"pointing to a"--> qml[inst/qml/filename.qml] & func[R/filename.R#function_name]
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 func --with signature--> signature[jaspResults, dataset, options]
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 qml --that defines interactive objects--> name[name: obj_name] --that are passed to --> options[options$obj_name] --in--> signature --processes all and creates an--> output["User-friendly output"]
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 
 </div>
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 - Where
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `jaspResults` creates the output
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `dataset` can be input via `New Data` button
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `options` are interactive objects available in the module
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 # Good news
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 You don't have to remember any of this. That's why we have a template!
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## How to use the template
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 1. Just download or clone it
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 2. Add your desired R package(s) to `DESCRIPTION`
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 3. Adapt the template to your needs. For instance:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	1. Duplicate the elements you need more than once
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	2. Remove the elements you don't need
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ### Tips and tricks
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Think of scalability
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Do not reinvent the wheel
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Rely on the underlying R package as much as possible
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Work mostly on the GUI, not on the functionality
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Tips and tricks
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - Don't forget that each element lives in three files:
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `inst/description.qml`
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `inst/qml/<filename>.qml`
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `R/<filename>.R`
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Tips and tricks
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 #### Where is my module?
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 If you forgot where your module was stored, just open R and type `.libPaths()`.
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ## Setup in a nutshell
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 Your system has to be able to:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - Install JASP  
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - Install R packages
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- From source
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- From CRAN
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- From GitHub
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+## For Windows users
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+1. Install JASP using Microsoft Store.
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+2. Install git, R and Rtools using winget:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+winget install Posit.RStudio
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+winget install RProject.Rtools
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+winget install git.git
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+3. Clone the template
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+git clone https://github.com/jasp-stats/jaspModuleTemplate.git
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+cd jaspModuleTemplate
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+4. Open RStudio and open the project in the cloned folder.
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+5. Install following packages:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```r
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+install.packages(c("usethis", "renv", "devtools", "pak"))
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+6. Restart Rstudio
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+# Configure GH token with
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+gitcreds::gitcreds_set()
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+# prep env with renv
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+renv::init()
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+7. In Rstudio terminal run:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+R CMD INSTALL . --preclean --no-multiarch --with-keep.source jaspModuleTemplate
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+### For Linux users
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+We pre-packed all the required dependencies in a flatpak package. Use the command below to install and run it:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```sh
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+flatpak run --branch=beta --devel org.jaspstats.JASP
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+Of course, if you prefer, you can install your dependencies yourself.
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### For Linux users
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+The workflow is:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+1. Edit your module in R studio
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+3. `install.packages(<path to module>)` to install it from source
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+4. Refresh in JASP from the ribbon menu
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Check ✅
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 1. Download or clone [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 2. Open it with RStudio
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 3. Go to the `Build` tab, and press `Install`
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 4. Didn't work? Take a look at the error message(s)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Frequent problems
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [Rtools](https://cran.r-project.org/bin/windows/Rtools/) is required in Windows
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [tools](https://cran.r-project.org/bin/macosx/tools/) is required in mac
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - Other system dependencies are:
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `cmake`
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- `gcc-fortran`
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Frequent problems
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 `jaspTools`, `jaspGraphs` and `jaspBase` are hosted on GitHub, not on CRAN 
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 👇
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 Use `remotes`:
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ```r
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 remotes::install_github(c(
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	"jasp-stats/jaspBase", 
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	"jasp-stats/jaspGraphs", 
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	"jasp-stats/jaspTools"))
-```
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+``` 
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ### Frequent problems
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 I'm asked a `GITHUB_PAT`. 
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 👇
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - Generate a new token in your GitHub.com account (`Your profile/Settings/Developer settings/Personal access tokens/Tokens (classic)`)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- No need to tick any scope
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 	- No need for expiration date
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - Set it as an environment variable in R
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 This happens because installing some of the jasp packages requires multiple calls to GitHub, which GitHub finds suspicious. So you need to identify yourself with a Personal Access Token.
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### For Linux users
-We pre-packed all the required dependencies in a flatpak package. Use the command below to install and run it:
-
-```sh
-flatpak run --branch=beta --devel org.jaspstats.JASP
-```
-
-Of course, if you prefer, you can install your dependencies yourself.
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### For Linux users
-
-The workflow is:
-
-1. Edit your module in R studio
-2. Execute `flatpak run --branch=beta --devel org.jaspstats.JASP` to open an R console there
-3. `install.packages(<path to module>)` to install it from source
-4. Refresh in JASP from the ribbon menu
-</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ### First goal of the day
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 0. Install JASP and R
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 1. Download our module template
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 2. Install it using R
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 3. Load it in JASP as a developer module
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
    
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 #### Reference materials
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - These slides: [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [Curated background materials](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-background-materials.md)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [Tutorial: Development of a JASP module](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-modules-tutorial.md)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [Minimalistic git slides](https://nlesc-my.sharepoint.com/:p:/g/personal/p_rodriguez-sanchez_esciencecenter_nl/IQBmUMSGPb9JSKGnQxJlPopLAUAoEkZKLKImJAq3demD8D0?e=aVK5N1)
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 ...
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [Detailed JASP module structure](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-module-structure.md)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [JASP QML guide](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-qml-guide.md)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 - [R Analyses guide](/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### We are here to help
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <img src="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/qr.png?raw=true" alt="" style="object-fit: scale-down">
 
 
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides)
-</div></script></section></section></div>
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</div></script></section></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+
+
+<!-- .slide: data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+</script></section></div>
     </div>
 
     <script src="dist/reveal.js"></script>
