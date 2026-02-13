@@ -381,14 +381,6 @@ You don't have to remember any of this. That's why we have a template!
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Tips and tricks
-- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Think of scalability
-- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Do not reinvent the wheel
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Rely on the underlying R package as much as possible
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Work mostly on the GUI, not on the functionality
-</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
 ## Setup in a nutshell
 
 Your system has to be able to:
@@ -457,8 +449,9 @@ The workflow is:
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### First goal of the day
+### Goal 1
 
+#### Setup the developer mode
 0. Install JASP and R
 1. Download our module template
 2. Install it using R
@@ -487,6 +480,19 @@ Suggests:
 ```r
 install.packages(".", dependencies = TRUE)
 ```
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Goal 3
+### Create your custom module
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Tips and tricks
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Picture your GUI. Use pen and paper if needed
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Do not reinvent the wheel
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Rely on the underlying R package as much as possible
+- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Work mostly on the GUI, not on the functionality
 </div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -555,11 +561,12 @@ This happens because installing some of the jasp packages requires multiple call
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Frequent problems
-- Don't forget that each element lives in three files:
+- Don't forget that each element might live in up to these 4 files:
 
 	- `inst/description.qml`
 	- `inst/qml/<filename>.qml`
 	- `R/<filename>.R`
+	- `NAMESPACE`
 </div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://github.com/PabRod/jasp-hackathon-slides/blob/main/img/insidebkg.png?raw=true" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
