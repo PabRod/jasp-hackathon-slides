@@ -61,8 +61,9 @@ Install --"on"--> Windows & Ubuntu --> Document
 ```
 ---
 ## Before we start
-+ Feel at home ☕
-+ Get your copy of these slides at [pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
+- Feel at home ☕
+- Get your copy of these slides at  
+[pabrod.github.io/jasp-hackathon-slides](https://pabrod.github.io/jasp-hackathon-slides/)
 
 --
 
@@ -426,6 +427,29 @@ This happens because installing some of the jasp packages requires multiple call
 3. Load it in JASP as a developer module
    
 [github.com/jasp-stats/jaspModuleTemplate](https://github.com/jasp-stats/jaspModuleTemplate)
+
+--
+
+## Goal 2
+### Install your package of interest
+1. Add your package to `DESCRIPTION`
+
+```sh
+...
+Imports:
+	jaspBase,
+	jaspGraphs,
+	<your package> <===============
+Suggests:
+	testthat
+...
+```
+2. Install it via
+
+```r
+install.packages(".", dependencies = TRUE)
+```
+
 
 ---
 #### Reference materials
