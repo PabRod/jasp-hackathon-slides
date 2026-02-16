@@ -486,3 +486,12 @@ export(<another function>)
 ### Frequent problems
 #### Where is my module?
 If you forgot where your module was stored, just open R and type `.libPaths()`.
+
+---
+
+## How to contribute?
+
+0. Put your code in GitHub
+1. Follow the instructions in [github.com/jasp-stats-modules/modules-registry](https://github.com/jasp-stats-modules/modules-registry)
+2. Or just contact us!
+
