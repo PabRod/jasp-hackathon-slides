@@ -411,7 +411,7 @@ install.packages(".", dependencies = TRUE)
 
 - [Detailed JASP module structure](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-module-structure.md)
 - [JASP QML guide](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/jasp-qml-guide.md)
-- [R Analyses guide](/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
+- [R Analyses guide](https://github.com/jasp-stats/jasp-desktop/blob/development/Docs/development/r-analyses-guide.md) (or how to use `jaspResults`)
 
 
 --
