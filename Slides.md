@@ -489,7 +489,25 @@ If you forgot where your module was stored, just open R and type `.libPaths()`.
 
 ---
 
-## How to contribute?
+## Photos
++ We'd like to take some photos
++ If you don't want to be in the picture, let me know
+
+--
+
+## Join our Mattermost
+- It's our main communication channel.
+- You have a link in the email _Technical preparation for the hackathon_.
+
+--
+
+## Share a screenshot of your module
+
+
+--
+
+## My module is ready!
+### How to contribute?
 
 0. Put your code in GitHub
 1. Follow the instructions in [github.com/jasp-stats-modules/modules-registry](https://github.com/jasp-stats-modules/modules-registry)
